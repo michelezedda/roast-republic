@@ -3,16 +3,16 @@ import Navbar from "./components/Navbar";
 
 const Home = () => {
   return (
-    <main className="h-[100vdh] w-[100vdw]">
+    <main className="h-[100vdh] w-full">
       <Navbar />
       <div className="flex flex-col lg:flex-row">
         <Card
-          bg="/media/1.webp"
+          bg="/media/our-story.webp"
           title="Roast Republic"
           paragraph="Learn More"
         />
-        <Card bg="/media/2.webp" title="Menu" paragraph="Learn More" />
-        <Card bg="/media/3.webp" title="Reviews" paragraph="Learn More" />
+        <Card bg="/media/menu.webp" title="Menu" paragraph="Learn More" />
+        <Card bg="/media/reviews.webp" title="Reviews" paragraph="Learn More" />
       </div>
     </main>
   );
