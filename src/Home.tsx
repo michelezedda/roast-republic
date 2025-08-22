@@ -1,17 +1,19 @@
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Menu from "./components/Menu";
+import Card from "./components/Card";
 import Navbar from "./components/Navbar";
-import Reviews from "./components/Reviews";
 
 const Home = () => {
   return (
-    <main className="mx-auto max-w-screen-xl">
+    <main className="h-[100vdh] w-[100vdw]">
       <Navbar />
-      <Hero />
-      <Menu />
-      <Reviews />
-      <Footer />
+      <div className="flex flex-col lg:flex-row">
+        <Card
+          bg="/media/1.webp"
+          title="Roast Republic"
+          paragraph="Learn More"
+        />
+        <Card bg="/media/2.webp" title="Menu" paragraph="Learn More" />
+        <Card bg="/media/3.webp" title="Reviews" paragraph="Learn More" />
+      </div>
     </main>
   );
 };

@@ -1,11 +1,19 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-1/2 -translate-x-1/2 flex justify-center items-center w-full py-8 z-50 border-2xl bg-[#dad3bd]">
-      <img
-        src="/media/logo.png"
-        alt="Kofi logo"
-        className="absolute top-0 w-35 bg-[#dad3bd] rounded-full"
-      />
+    <nav className="absolute top-0 left-1/2 -translate-x-1/2 flex justify-between items-center w-full p-6 z-50 border-2xl">
+      <Link to="/">
+        <img src="/media/logo.png" alt="Kofi logo" className="w-30" />
+      </Link>
+      <ul className="flex items-center gap-10 text-lg text-black lg:text-white">
+        <a href="">
+          <li>Since 1998</li>
+        </a>
+        <a href="#menu">
+          <li>Menu</li>
+        </a>
+      </ul>
     </nav>
   );
 };
