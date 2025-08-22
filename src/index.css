@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap");
 @import "tailwindcss";
-@plugin "daisyui";
 
 :root {
   font-family: Funnel Display, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -10,10 +10,17 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #dad3bd;
+  height: 10000px;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
 }
