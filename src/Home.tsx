@@ -48,7 +48,7 @@ const Home = () => {
           }}
         >
           {openId !== null && (
-            <div className="my-20 mx-10">
+            <div className="my-20 mx-4 lg:mx-10">
               <h2 className="text-4xl lg:text-5xl mb-4 font-bold">
                 {cards[openId].subtitle.toUpperCase()}
               </h2>
