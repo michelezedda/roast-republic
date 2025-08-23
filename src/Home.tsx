@@ -38,7 +38,7 @@ const Home = () => {
         </div>
         {/* Inner Card */}
         <div
-          className={`transition-all duration-700 ease-in-out overflow-y-scroll ${
+          className={`relative transition-all duration-700 ease-in-out overflow-y-scroll ${
             openId === null ? "w-0 p-0" : "w-full lg:w-1/2 p-10"
           }`}
           style={{

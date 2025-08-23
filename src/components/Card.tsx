@@ -17,7 +17,7 @@ const Card = ({ bg, title, paragraph, onClick }: CardProps) => {
           hovered ? "lg:opacity-100" : "lg:opacity-0"
         }`}
       >
-        <h1 className="text-4xl 2xl:text-6xl font-[Climate_Crisis] text-white w-2/3">
+        <h1 className="text-4xl 2xl:text-6xl font-[Climate_Crisis] text-white break-words">
           {title.toUpperCase()}
         </h1>
         <p className="mt-2 text-neutral-300">{paragraph.toUpperCase()}</p>
