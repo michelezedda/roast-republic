@@ -36,7 +36,7 @@ const Home = () => {
   ];
 
   return (
-    <main className="h-[100dvh] w-full brightness-85">
+    <main className="h-[100dvh] w-full brightness-90">
       <Navbar />
       <div className="flex w-full h-screen lg:overflow-hidden">
         {/* Cards */}

@@ -6,12 +6,15 @@ const Navbar = () => {
       <Link to="/">
         <img src="/media/logo.png" alt="Roast Republic logo" className="w-30" />
       </Link>
-      <ul className="flex items-center gap-10 text-lg text-black lg:text-white">
+      <ul className="flex items-center gap-10 text-lg text-black">
         <a href="">
           <li>Since 1998</li>
         </a>
         <a href="#menu">
           <li>Menu</li>
+        </a>
+        <a href="#menu">
+          <li>Reviews</li>
         </a>
       </ul>
     </nav>
