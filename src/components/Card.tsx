@@ -6,7 +6,7 @@ const Card = ({ bg, title, paragraph, onClick }: CardProps) => {
 
   return (
     <div
-      className="flex items-end bg-cover bg-top lg:bg-center h-[65dvh] lg:h-screen cursor-pointer transition-transform duration-700 ease-in-out lg:hover:scale-105"
+      className="flex items-end bg-cover bg-bottom lg:bg-center h-[80dvh] lg:h-screen cursor-pointer transition-transform duration-700 ease-in-out lg:hover:scale-105"
       style={{ backgroundImage: `url(${bg})` }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
