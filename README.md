@@ -31,7 +31,7 @@ You can check out the live version of Roast Republic here: :link: [Roast Republi
 
 ## Installation
 
-To run Roaster Republic locally, follow these steps:
+To run Roast Republic locally, follow these steps:
 
 ### Prerequisites
 
