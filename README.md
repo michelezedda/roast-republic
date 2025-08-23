@@ -1,69 +1,84 @@
-# React + TypeScript + Vite
+<img width="2559" height="1266" alt="roast1" src="https://github.com/user-attachments/assets/6b4a769f-5d97-4436-a0ff-91629e60416e" /><h1 align="center">
+  <br>
+<img width="2559" height="1266" alt="roast1" src="https://github.com/user-attachments/assets/d8a5e742-ea71-47a3-bfd5-51cc699f47f1" />
+  <br>
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2 align="center">Roast Republic: A modern coffee shop experience</h2> 
 
-Currently, two official plugins are available:
+## Introduction
+Roast Republic is a coffee shop website where users can explore the menu, discover the story behind the brand, and find location details. With a clean design and smooth navigation, Roaster Republic creates a welcoming online presence for coffee lovers.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
 
-## Expanding the ESLint configuration
+- **Frontend:**
+  - React
+  - TypeScript
+  - Tailwind CSS
+  - Vite (for faster builds and development)
+  - react-router-dom (for routing)
+  - react-icons (for UI icons)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Version Control:**
+  - Git
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Hosting:**
+  - Vercel (for deployment)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Live Demo
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+You can check out the live version of Roast Republic here: :link: [Roast Republic](https://roast-republic.vercel.app/)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+To run Roaster Republic locally, follow these steps:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- **Node.js** (>=16.x)
+- **npm** or **yarn**
+
+### Steps
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/michelezedda/roast-republic.git
+      
+2. Navigate into the project directory:
+
+    ```bash
+    cd roast-republic
+    ```
+
+3. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+    or if you're using Yarn:
+
+    ```bash
+    yarn install
+    ```
+
+4. Run the app locally:
+
+    ```bash
+    npm run dev
+    ```
+
+    or with Yarn:
+
+    ```bash
+    yarn dev
+    ```
+  
+  ## Screenshots
+   <div align="center">
+<img width="2559" height="1266" alt="roast1" src="https://github.com/user-attachments/assets/d8a5e742-ea71-47a3-bfd5-51cc699f47f1" />
+     <img width="2542" height="1267" alt="roast2" src="https://github.com/user-attachments/assets/a270ba60-8327-473b-9bb4-643911f88ade" />
+</div>
