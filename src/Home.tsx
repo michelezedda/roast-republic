@@ -20,12 +20,12 @@ const Home = () => {
           {cards.map((card) => (
             <div
               key={card.id}
-              className={`transition-all duration-700 lg:overflow-hidden ease-in-out ${
+              className={`transition-all duration-700 ease-in-out ${
                 openId === null
                   ? "lg:w-1/3 lg:opacity-100"
                   : openId === card.id
                   ? "lg:w-full lg:opacity-100"
-                  : "lg:w-0 lg:opacity-0"
+                  : "lg:w-0 lg:opacity-0 overflow-hidden"
               }`}
             >
               <Card
