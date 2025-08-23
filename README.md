@@ -1,4 +1,4 @@
-<img width="2559" height="1266" alt="roast1" src="https://github.com/user-attachments/assets/6b4a769f-5d97-4436-a0ff-91629e60416e" /><h1 align="center">
+<h1 align="center">
   <br>
 <img width="2559" height="1266" alt="roast1" src="https://github.com/user-attachments/assets/d8a5e742-ea71-47a3-bfd5-51cc699f47f1" />
   <br>
