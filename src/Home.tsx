@@ -82,7 +82,7 @@ const Home = () => {
               {cards[openId].syrups?.map((menuItem) => (
                 <div
                   key={menuItem.id}
-                  className="flex justify-between text-2xl"
+                  className="flex justify-between text-xl lg:text-2xl"
                 >
                   <p>{menuItem.title}</p>
                   <span>{menuItem.price}</span>
