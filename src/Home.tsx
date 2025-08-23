@@ -20,7 +20,7 @@ const Home = () => {
           {cards.map((card) => (
             <div
               key={card.id}
-              className={`transition-all duration-700 overflow-hidden ease-in-out ${
+              className={`transition-all duration-700 lg:overflow-hidden ease-in-out ${
                 openId === null
                   ? "lg:w-1/3 lg:opacity-100"
                   : openId === card.id
@@ -48,24 +48,26 @@ const Home = () => {
           }}
         >
           {openId !== null && (
-            <div className="my-12 mx-10">
-              <h2 className="text-5xl mb-4 font-bold">
+            <div className="my-20 mx-10">
+              <h2 className="text-4xl lg:text-5xl mb-4 font-bold">
                 {cards[openId].subtitle.toUpperCase()}
               </h2>
               <p
-                className="text-2xl mt-10 leading-9"
+                className="text-xl lg:text-2xl mt-10 leading-9"
                 style={{ whiteSpace: "pre-line" }}
               >
                 {cards[openId].description}
               </p>
               {/* Drinks? */}
               {cards[openId].menu && (
-                <h3 className="mt-10 mb-4 text-4xl font-medium">Drinks</h3>
+                <h3 className="mt-10 mb-4 text-2xl lg:text-4xl font-medium">
+                  Drinks
+                </h3>
               )}
               {cards[openId].menu?.map((menuItem) => (
                 <div
                   key={menuItem.id}
-                  className="flex justify-between text-2xl"
+                  className="flex justify-between text-xl lg:text-2xl"
                 >
                   <p>{menuItem.title}</p>
                   <span>{menuItem.price}</span>
@@ -73,7 +75,9 @@ const Home = () => {
               ))}
               {/* Syrups? */}
               {cards[openId].syrups && (
-                <h3 className="mt-10 mb-4 text-4xl font-medium">Syrups</h3>
+                <h3 className="mt-10 mb-4 text-2xl lg:text-4xl font-medium">
+                  Syrups
+                </h3>
               )}
               {cards[openId].syrups?.map((menuItem) => (
                 <div
