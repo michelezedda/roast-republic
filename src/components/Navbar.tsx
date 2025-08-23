@@ -1,22 +1,20 @@
-import { Link } from "react-router-dom";
-
 const Navbar = () => {
   return (
-    <nav className="absolute top-0 left-1/2 -translate-x-1/2 flex justify-between items-center w-full p-6 z-50 border-2xl">
-      <Link to="/">
+    <nav className="absolute flex justify-between items-center w-full p-6 z-50">
+      <a href="/">
         <img src="/media/logo.png" alt="Roast Republic logo" className="w-30" />
-      </Link>
-      <ul className="flex items-center gap-10 text-lg text-black">
-        <a href="">
+      </a>
+      {/* <ul className="flex items-center gap-10 text-lg text-black">
+        <a href="/">
           <li>Since 1998</li>
         </a>
-        <a href="#menu">
+        <a href="/">
           <li>Menu</li>
         </a>
-        <a href="#menu">
+        <a href="/">
           <li>Reviews</li>
         </a>
-      </ul>
+      </ul> */}
     </nav>
   );
 };

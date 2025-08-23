@@ -1,90 +1,94 @@
 import { useState } from "react";
 import Card from "./components/Card";
 import Navbar from "./components/Navbar";
+import { IoIosClose } from "react-icons/io";
+import { cards } from "./data/data";
 
 const Home = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const cards = [
-    {
-      bg: "/media/our-story.webp",
-      title: "Roast Republic",
-      paragraph: "Since 1998",
-      innerBg: "#b1b1b1",
-      innerText: "#000",
-      subtitle: "",
-      description: "",
-    },
-    {
-      bg: "/media/menu.webp",
-      title: "Menu",
-      paragraph: "Take a Look",
-      innerBg: "dbd6cc",
-      innerText: "#000",
-      subtitle: "",
-      description: "",
-    },
-    {
-      bg: "/media/reviews.webp",
-      title: "Reviews",
-      paragraph: "Loved by Many",
-      innerBg: "#141414",
-      innerText: "#fff",
-      subtitle: "",
-      description: "",
-    },
-  ];
+  const [openId, setOpenId] = useState<number | null>(null);
 
   return (
     <main className="h-[100dvh] w-full brightness-90">
       <Navbar />
-      <div className="flex w-full h-screen lg:overflow-hidden">
+      <div className="flex w-full h-screen">
         {/* Cards */}
         <div
           className={`flex flex-col lg:flex-row transition-all duration-700 ${
-            openIndex === null ? "w-full" : "w-0 lg:w-1/2"
+            openId === null ? "w-full" : "w-0 lg:w-1/2"
           }`}
         >
-          {cards.map((card, index) => (
+          {cards.map((card) => (
             <div
-              key={index}
-              className={`transition-all duration-700 lg:overflow-hidden ease-in-out ${
-                openIndex === null
+              key={card.id}
+              className={`transition-all duration-700 overflow-hidden ease-in-out ${
+                openId === null
                   ? "lg:w-1/3 lg:opacity-100"
-                  : openIndex === index
+                  : openId === card.id
                   ? "lg:w-full lg:opacity-100"
                   : "lg:w-0 lg:opacity-0"
               }`}
             >
               <Card
                 {...card}
-                open={openIndex === index}
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                open={openId === card.id}
+                onClick={() => setOpenId(openId === card.id ? null : card.id)}
               />
             </div>
           ))}
         </div>
         {/* Inner Card */}
         <div
-          className={`transition-all duration-700 ease-in-out overflow-hidden ${
-            openIndex === null ? "w-0 p-0" : "w-full lg:w-1/2 p-10"
+          className={`transition-all duration-700 ease-in-out overflow-y-scroll ${
+            openId === null ? "w-0 p-0" : "w-full lg:w-1/2 p-10"
           }`}
           style={{
-            color:
-              openIndex !== null ? cards[openIndex].innerText : "transparent",
+            color: openId !== null ? cards[openId].innerText : "transparent",
             backgroundColor:
-              openIndex !== null ? cards[openIndex].innerBg : "transparent",
+              openId !== null ? cards[openId].innerBg : "transparent",
           }}
         >
-          {openIndex !== null && (
-            <div className="my-12 mx-4">
-              <h2 className="text-4xl mb-4">{cards[openIndex].title}</h2>
-              <p>Details about {cards[openIndex].title} go here...</p>
-              <button
-                className="absolute bottom-15 right-15 text-2xl cursor-pointer px-6 py-4 rounded-full bg-white text-black"
-                onClick={() => setOpenIndex(null)}
+          {openId !== null && (
+            <div className="my-12 mx-10">
+              <h2 className="text-5xl mb-4 font-bold">
+                {cards[openId].subtitle.toUpperCase()}
+              </h2>
+              <p
+                className="text-2xl mt-10 leading-9"
+                style={{ whiteSpace: "pre-line" }}
               >
-                X
+                {cards[openId].description}
+              </p>
+              {/* Drinks? */}
+              {cards[openId].menu && (
+                <h3 className="mt-10 mb-4 text-4xl font-medium">Drinks</h3>
+              )}
+              {cards[openId].menu?.map((menuItem) => (
+                <div
+                  key={menuItem.id}
+                  className="flex justify-between text-2xl"
+                >
+                  <p>{menuItem.title}</p>
+                  <span>{menuItem.price}</span>
+                </div>
+              ))}
+              {/* Syrups? */}
+              {cards[openId].syrups && (
+                <h3 className="mt-10 mb-4 text-4xl font-medium">Syrups</h3>
+              )}
+              {cards[openId].syrups?.map((menuItem) => (
+                <div
+                  key={menuItem.id}
+                  className="flex justify-between text-2xl"
+                >
+                  <p>{menuItem.title}</p>
+                  <span>{menuItem.price}</span>
+                </div>
+              ))}
+              <button
+                className="absolute bottom-20 right-8 text-2xl cursor-pointer p-3 rounded-full bg-white/70 text-black"
+                onClick={() => setOpenId(null)}
+              >
+                <IoIosClose size={35} />
               </button>
             </div>
           )}

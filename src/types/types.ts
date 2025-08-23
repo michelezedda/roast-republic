@@ -8,4 +8,12 @@ export type CardProps = {
   innerText: string;
   subtitle: string;
   description: string;
+  menu?: MenuItem[];
+  syrups?: MenuItem[];
+};
+
+export type MenuItem = {
+  id: number;
+  title: string;
+  price: string;
 };
