@@ -4,7 +4,7 @@
   <br>
 </h1>
 
-<h2 align="center">Roast Republic: A modern coffee shop experience</h2> 
+<h2 align="center">Roast Republic: Fresh Coffee & Cozy Vibes</h2> 
 
 ## Introduction
 Roast Republic is a coffee shop website where users can explore the menu, discover the story behind the brand, and find location details. With a clean design and smooth navigation, Roast Republic creates a welcoming online presence for coffee lovers.
