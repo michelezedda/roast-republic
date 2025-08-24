@@ -37,7 +37,7 @@ const Home = () => {
         </div>
         {/* Inner Card */}
         <div
-          className={`transition-all delay-400 2xl:delay-500 duration-700 ease-in-out overflow-y-scroll ${
+          className={`relative transition-all delay-400 2xl:delay-500 duration-700 ease-in-out overflow-y-scroll ${
             openId === null ? "translate-x-[100%]" : "w-full translate-x-0"
           }`}
           style={{
@@ -47,7 +47,7 @@ const Home = () => {
           }}
         >
           {openId !== null && (
-            <div className="mt-26 my-10 mx-4 lg:mx-10">
+            <div className="my-30 mx-4 lg:mx-10">
               <h2 className="text-4xl lg:text-5xl mb-4 font-bold">
                 {cards[openId].subtitle.toUpperCase()}
               </h2>
@@ -88,7 +88,7 @@ const Home = () => {
                 </div>
               ))}
               <button
-                className="absolute bottom-20 right-8 text-2xl cursor-pointer p-3 rounded-full bg-white/70 text-black"
+                className="sticky bottom-10 left-3/4 text-2xl cursor-pointer p-3 rounded-full bg-white/70 text-black"
                 onClick={() => setOpenId(null)}
               >
                 <IoIosClose size={35} />
