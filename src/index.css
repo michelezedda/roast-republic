@@ -25,3 +25,17 @@ body {
   margin: 0;
   scroll-behavior: smooth;
 }
+
+@keyframes slide {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.animate-slide {
+  animation: slide 50s linear infinite;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}

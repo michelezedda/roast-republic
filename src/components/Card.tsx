@@ -13,14 +13,22 @@ const Card = ({ bg, title, paragraph, onClick }: CardProps) => {
       onClick={onClick}
     >
       <div
-        className={`flex flex-col w-full py-20 pl-5 lg:pl-10 bg-gradient-to-t from-black/90 via-black/65 to-transparent transition-opacity duration-700 ${
+        className={`flex flex-col w-full py-20 bg-gradient-to-t from-black/80 via-black/55 to-transparent transition-opacity duration-700 ${
           hovered ? "lg:opacity-100" : "lg:opacity-0"
         }`}
       >
-        <h1 className="text-4xl 2xl:text-6xl font-[Climate_Crisis] text-white break-words">
+        <h1 className="text-4xl 2xl:text-6xl font-[Climate_Crisis] text-white break-words pl-5 lg:pl-10 ">
           {title.toUpperCase()}
         </h1>
-        <p className="mt-2 text-neutral-300">{paragraph.toUpperCase()}</p>
+        <div className="overflow-hidden whitespace-nowrap w-full">
+          <p className="animate-slide inline-block tracking-[5px] mt-2 text-neutral-300">
+            {paragraph.toUpperCase()}
+            {paragraph.toUpperCase()}
+            {paragraph.toUpperCase()}
+            {paragraph.toUpperCase()}
+            {paragraph.toUpperCase()}
+          </p>
+        </div>
       </div>
     </div>
   );

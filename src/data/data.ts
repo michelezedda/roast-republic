@@ -3,7 +3,8 @@ const cards = [
     id: 0,
     bg: "/media/our-story.webp",
     title: "Roast Republic",
-    paragraph: "Since 1998",
+    paragraph:
+      "Open 6:30AM - 5PM Every Day • Founded in Los Angeles • Since 1998 • ",
     innerBg: "#b1b1b1",
     innerText: "#000",
     subtitle:
@@ -15,7 +16,7 @@ const cards = [
     id: 1,
     bg: "/media/menu.webp",
     title: "Menu",
-    paragraph: "Take a Look",
+    paragraph: "Take a Look • Enjoy every sip • Love the Flavor • ",
     innerBg: "#dbd6cc",
     innerText: "#000",
     subtitle: "Our Menu",
@@ -44,7 +45,8 @@ const cards = [
     id: 2,
     bg: "/media/our-mission.webp",
     title: "Our Mission",
-    paragraph: "Loved by Many",
+    paragraph:
+      "Loved by Many • Doing Good for Farmers and Community • Founded by a Purpose • ",
     innerBg: "#2b2b2b",
     innerText: "#fff",
     subtitle:
