@@ -3,7 +3,6 @@ export type CardProps = {
   title: string;
   paragraph: string;
   onClick: () => void;
-  open: boolean;
   innerBg: string;
   innerText: string;
   subtitle: string;

@@ -8,7 +8,7 @@ const Home = () => {
   const [openId, setOpenId] = useState<number | null>(null);
 
   return (
-    <main className="h-[100dvh] w-full brightness-90">
+    <main className="h-[100dvh] w-full brightness-90 overflow-hidden">
       <Navbar />
       <div className="flex w-full h-screen">
         {/* Cards */}
@@ -22,15 +22,14 @@ const Home = () => {
               key={card.id}
               className={`transition-all duration-700 ease-in-out ${
                 openId === null
-                  ? "lg:w-1/3 lg:opacity-100"
+                  ? "lg:w-1/3"
                   : openId === card.id
-                  ? "lg:w-full lg:opacity-100"
-                  : "lg:w-0 lg:opacity-0 overflow-hidden"
+                  ? "lg:w-full"
+                  : "lg:w-0 overflow-hidden"
               }`}
             >
               <Card
                 {...card}
-                open={openId === card.id}
                 onClick={() => setOpenId(openId === card.id ? null : card.id)}
               />
             </div>
@@ -38,8 +37,8 @@ const Home = () => {
         </div>
         {/* Inner Card */}
         <div
-          className={`relative transition-all duration-700 ease-in-out overflow-y-scroll ${
-            openId === null ? "w-0 p-0" : "w-full lg:w-1/2 p-10"
+          className={`transition-all delay-400 2xl:delay-500 duration-700 ease-in-out overflow-y-scroll ${
+            openId === null ? "translate-x-[100%]" : "w-full translate-x-0"
           }`}
           style={{
             color: openId !== null ? cards[openId].innerText : "transparent",
@@ -48,7 +47,7 @@ const Home = () => {
           }}
         >
           {openId !== null && (
-            <div className="my-20 mx-4 lg:mx-10">
+            <div className="mt-26 my-10 mx-4 lg:mx-10">
               <h2 className="text-4xl lg:text-5xl mb-4 font-bold">
                 {cards[openId].subtitle.toUpperCase()}
               </h2>

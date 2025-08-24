@@ -17,9 +17,11 @@ const Card = ({ bg, title, paragraph, onClick }: CardProps) => {
           hovered ? "lg:opacity-100" : "lg:opacity-0"
         }`}
       >
-        <h1 className="text-4xl 2xl:text-6xl font-[Climate_Crisis] text-white break-words pl-5 lg:pl-10 ">
-          {title.toUpperCase()}
-        </h1>
+        <div className="overflow-hidden whitespace-nowrap lg:whitespace-normal w-full">
+          <h1 className="text-4xl 2xl:text-6xl font-[Climate_Crisis] text-white break-words pl-5 lg:pl-10">
+            {title.toUpperCase()}
+          </h1>
+        </div>
         <div className="overflow-hidden whitespace-nowrap w-full">
           <p className="animate-slide inline-block tracking-[5px] mt-2 text-neutral-300">
             {paragraph.toUpperCase()}
