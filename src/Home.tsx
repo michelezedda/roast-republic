@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <main className="h-[100dvh] w-full brightness-90 lg:overflow-hidden">
       <Navbar />
-      <div className="flex w-full h-screen">
+      <div className="flex w-full h-full">
         {/* Cards */}
         <div
           className={`flex flex-col lg:flex-row transition-all duration-700 ${
@@ -37,7 +37,7 @@ const Home = () => {
         </div>
         {/* Inner Card */}
         <div
-          className={`relative transition-all delay-400 2xl:delay-500 duration-700 ease-in-out overflow-y-scroll ${
+          className={`transition-all delay-400 2xl:delay-500 duration-700 ease-in-out overflow-y-scroll ${
             openId === null ? "translate-x-[100%]" : "w-full translate-x-0"
           }`}
           style={{
@@ -87,15 +87,18 @@ const Home = () => {
                   <span>{menuItem.price}</span>
                 </div>
               ))}
-              <button
-                className="sticky bottom-10 left-3/4 text-2xl cursor-pointer p-3 rounded-full bg-white/70 text-black"
-                onClick={() => setOpenId(null)}
-              >
-                <IoIosClose size={35} />
-              </button>
             </div>
           )}
         </div>
+        {/* Close Button */}
+        {openId !== null && (
+          <button
+            className="fixed bottom-20 right-10 active:scale-98 text-2xl cursor-pointer p-3 rounded-full bg-white/70 text-black"
+            onClick={() => setOpenId(null)}
+          >
+            <IoIosClose size={35} />
+          </button>
+        )}
       </div>
     </main>
   );
