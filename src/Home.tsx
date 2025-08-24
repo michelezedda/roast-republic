@@ -8,7 +8,7 @@ const Home = () => {
   const [openId, setOpenId] = useState<number | null>(null);
 
   return (
-    <main className="h-[100dvh] w-full brightness-90 overflow-hidden">
+    <main className="h-[100dvh] w-full brightness-90 lg:overflow-hidden">
       <Navbar />
       <div className="flex w-full h-screen">
         {/* Cards */}
