@@ -6,7 +6,7 @@ const Card = ({ bg, title, paragraph, onClick }: CardProps) => {
 
   return (
     <div
-      className="flex items-end bg-cover bg-bottom h-[80dvh] lg:h-screen cursor-pointer transition-transform duration-700 ease-in-out lg:hover:scale-105"
+      className="flex items-end bg-cover bg-bottom h-[95dvh] lg:h-screen cursor-pointer transition-transform duration-700 ease-in-out lg:hover:scale-105"
       style={{ backgroundImage: `url(${bg})` }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -17,8 +17,8 @@ const Card = ({ bg, title, paragraph, onClick }: CardProps) => {
           hovered ? "lg:opacity-100" : "lg:opacity-0"
         }`}
       >
-        <div className="overflow-hidden whitespace-nowrap lg:whitespace-normal w-full">
-          <h1 className="text-4xl 2xl:text-6xl font-[Climate_Crisis] text-white break-words pl-5 lg:pl-10">
+        <div className="overflow-hidden whitespace-nowrap lg:whitespace-normal break-words w-full">
+          <h1 className="text-3xl sm:text-4xl 2xl:text-6xl font-[Climate_Crisis] text-white pl-5 lg:pl-10">
             {title.toUpperCase()}
           </h1>
         </div>
