@@ -5,7 +5,7 @@ const InnerCard = ({ openId, setOpenId, cards }: InnerCardProps) => {
   return (
     <>
       <div
-        className={`transition-all delay-400 2xl:delay-500 duration-700 ease-in-out overflow-y-scroll ${
+        className={`transition-all delay-400 2xl:delay-500 duration-700 ease-in-out overflow-y-auto ${
           openId === null ? "translate-x-[100%]" : "w-full translate-x-0"
         }`}
         style={{
@@ -55,6 +55,22 @@ const InnerCard = ({ openId, setOpenId, cards }: InnerCardProps) => {
                 <span>{menuItem.price}</span>
               </div>
             ))}
+            {/* Pictures */}
+            <div className="flex flex-col mt-10 justify-center items-center">
+              {cards[openId].img.map((pic) => (
+                <div key={pic.id} className="relative">
+                  <img
+                    src={pic.src}
+                    alt={pic.alt}
+                    loading="lazy"
+                    className="mt-6"
+                  />
+                  <span className="absolute top-10 left-10 text-black backdrop-blur-xs p-2">
+                    {pic.alt}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         )}
       </div>

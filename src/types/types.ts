@@ -10,6 +10,7 @@ export type CardProps = {
   description: string;
   menu?: MenuItem[];
   syrups?: MenuItem[];
+  img: { id: number; src: string; alt: string }[];
 };
 
 export type InnerCardProps = {

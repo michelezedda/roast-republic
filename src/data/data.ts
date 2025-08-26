@@ -11,6 +11,23 @@ const cards = [
       "Our cafe is a direct representation of our love and passion for coffee, community, and the partners we work with to source amazing coffee.",
     description:
       "Our space is designed to inspire people to explore and experience the entire coffee journey and the many hands around the world that are involved in the production. We hope inspire people with the entire narrative of the coffee they are enjoying. \n \n We roast all of our coffee in house on a 10kg Mill City Roaster at our Roast Republic location, creating exceptional blends and single origins for both our shop and wholesale for several other shops and restaurants around Los Angeles. Our coffee bar features an array of espresso and specialty drinks, along with direct trade pour overs, teas, and local pastries.",
+    img: [
+      {
+        id: 0,
+        src: "/media/img3.webp",
+        alt: "Barista preparing a latte at Roast Republic",
+      },
+      {
+        id: 1,
+        src: "/media/img4.webp",
+        alt: "Roast Republic's outdoor patio seating area with tables",
+      },
+      {
+        id: 2,
+        src: "/media/img6.webp",
+        alt: "Interior of Roast Republic coffee shop with customers enjoying drinks",
+      },
+    ],
   },
   {
     id: 1,
@@ -40,6 +57,15 @@ const cards = [
       { id: 3, title: "Marshmallow", price: "+ $ 1.25" },
       { id: 4, title: "Pumpkin Spice", price: "+ $ 1.5" },
     ],
+    img: [
+      { id: 0, src: "/media/img1.webp", alt: "Iced coffee" },
+      {
+        id: 1,
+        src: "/media/img2.webp",
+        alt: "Barista preparing a latte with latte art at Roast Republic",
+      },
+      { id: 2, src: "/media/img8.webp", alt: "Our coffee" },
+    ],
   },
   {
     id: 2,
@@ -53,6 +79,23 @@ const cards = [
       "Our mission is to do as much good as possible from farm to cup while helping people experience and enjoy high quality, fresh roasted, specialty coffee.",
     description:
       "We build partnerships with coffee farmers around the world to source high quality, specialty coffee beans helping them sustain and grow their businesses and support their families and communities. We then small batch roast the coffee here in LA and donate back a portion of our proceeds to nonprofits and causes we care about in our community. By helping people think slightly differently about something they consume every day, we believe we can do a lot of good together. \n \n Roast Republic was inspired by a friend of ours in Colombia who does a lot of humanitarian and missions work with people living in the dumps surrounding the city. He has a model where he launched a coffee roastery and several cafes around the city that helped supplement most of his community work. Not only did it fund his passion of helping people in poverty, but it also gave him an opportunity to connect with, and provide jobs for, people in the community. He seemed to create so much good with something so simple. Inspired by this, we came back to LA and began to dream about what it would look like to launch something similar here to support the non-profits we were passionate about, and create a lot of good in our community.",
+    img: [
+      {
+        id: 0,
+        src: "/media/img7.webp",
+        alt: "Interior of Roast Republic coffee shop with cozy seating and warm lighting",
+      },
+      {
+        id: 1,
+        src: "/media/img5.webp",
+        alt: "Minimalist corner setup with a wooden chair and table by a window",
+      },
+      {
+        id: 2,
+        src: "/media/img9.webp",
+        alt: "Roast Republic's interior featuring the coffee bar and part of the seating area",
+      },
+    ],
   },
 ];
 
