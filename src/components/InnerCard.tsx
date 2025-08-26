@@ -5,13 +5,15 @@ const InnerCard = ({ openId, setOpenId, cards }: InnerCardProps) => {
   return (
     <>
       <div
-        className={`transition-all delay-400 2xl:delay-500 duration-700 ease-in-out overflow-y-auto ${
+        className={`transition-all delay-400 2xl:delay-500 duration-700 ease-in-out overflow-y-auto  ${
           openId === null ? "translate-x-[100%]" : "w-full translate-x-0"
         }`}
         style={{
           color: openId !== null ? cards[openId].innerText : "transparent",
           backgroundColor:
             openId !== null ? cards[openId].innerBg : "transparent",
+          scrollbarWidth: "none", // Firefox
+          msOverflowStyle: "none", // IE/Edge
         }}
       >
         {openId !== null && (
@@ -65,7 +67,7 @@ const InnerCard = ({ openId, setOpenId, cards }: InnerCardProps) => {
                     loading="lazy"
                     className="mt-6"
                   />
-                  <span className="absolute top-10 left-10 text-black backdrop-blur-xs p-2">
+                  <span className="absolute bottom-0 backdrop-blur-xs backdrop-brightness-90 p-2 text-white">
                     {pic.alt}
                   </span>
                 </div>
