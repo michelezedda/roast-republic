@@ -58,16 +58,11 @@ const InnerCard = ({ openId, setOpenId, cards }: InnerCardProps) => {
               </div>
             ))}
             {/* Pictures */}
-            <div className="flex flex-col mt-10 justify-center items-center">
+            <div className="flex flex-col gap-6 justify-center items-center mt-10">
               {cards[openId].img.map((pic) => (
                 <div key={pic.id} className="relative">
-                  <img
-                    src={pic.src}
-                    alt={pic.alt}
-                    loading="lazy"
-                    className="mt-6"
-                  />
-                  <span className="absolute bottom-0 backdrop-blur-xs backdrop-brightness-90 p-2 text-white">
+                  <img src={pic.src} alt={pic.alt} loading="lazy" />
+                  <span className="absolute bottom-0 backdrop-blur-xs backdrop-brightness-90 p-2 text-neutral-200 w-full">
                     {pic.alt}
                   </span>
                 </div>

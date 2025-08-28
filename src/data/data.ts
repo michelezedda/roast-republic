@@ -14,16 +14,11 @@ const cards = [
     img: [
       {
         id: 0,
-        src: "/media/img3.webp",
-        alt: "Barista preparing a latte at Roast Republic",
-      },
-      {
-        id: 1,
         src: "/media/img4.webp",
         alt: "Roast Republic's outdoor patio seating area with tables",
       },
       {
-        id: 2,
+        id: 1,
         src: "/media/img6.webp",
         alt: "Interior of Roast Republic coffee shop with customers enjoying drinks",
       },
@@ -64,7 +59,6 @@ const cards = [
         src: "/media/img2.webp",
         alt: "Barista preparing a latte with latte art at Roast Republic",
       },
-      { id: 2, src: "/media/img8.webp", alt: "Our coffee" },
     ],
   },
   {
@@ -84,16 +78,6 @@ const cards = [
         id: 0,
         src: "/media/img7.webp",
         alt: "Interior of Roast Republic coffee shop with cozy seating and warm lighting",
-      },
-      {
-        id: 1,
-        src: "/media/img5.webp",
-        alt: "Minimalist corner setup with a wooden chair and table by a window",
-      },
-      {
-        id: 2,
-        src: "/media/img9.webp",
-        alt: "Roast Republic's interior featuring the coffee bar and part of the seating area",
       },
     ],
   },
