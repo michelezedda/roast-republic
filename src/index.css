@@ -28,14 +28,14 @@ body {
 
 @keyframes slide {
   0% {
-    transform: translateX(10%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 .animate-slide {
-  animation: slide 50s linear infinite;
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
+  display: inline-flex;
+  white-space: nowrap;
+  animation: slide 600s linear infinite;
 }

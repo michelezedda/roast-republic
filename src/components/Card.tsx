@@ -24,11 +24,7 @@ const Card = ({ bg, title, paragraph, onClick }: CardProps) => {
         </div>
         <div className="overflow-hidden whitespace-nowrap w-full">
           <p className="animate-slide inline-block tracking-[5px] mt-2 text-neutral-300">
-            {paragraph.toUpperCase()}
-            {paragraph.toUpperCase()}
-            {paragraph.toUpperCase()}
-            {paragraph.toUpperCase()}
-            {paragraph.toUpperCase()}
+            {paragraph.toUpperCase().repeat(100)}
           </p>
         </div>
       </div>

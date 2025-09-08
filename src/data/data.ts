@@ -17,11 +17,6 @@ const cards = [
         src: "/media/img4.webp",
         alt: "Roast Republic's outdoor patio seating area with tables",
       },
-      {
-        id: 1,
-        src: "/media/img6.webp",
-        alt: "Interior of Roast Republic coffee shop with customers enjoying drinks",
-      },
     ],
   },
   {
@@ -52,14 +47,7 @@ const cards = [
       { id: 3, title: "Marshmallow", price: "+ $ 1.25" },
       { id: 4, title: "Pumpkin Spice", price: "+ $ 1.5" },
     ],
-    img: [
-      { id: 0, src: "/media/img1.webp", alt: "Iced coffee" },
-      {
-        id: 1,
-        src: "/media/img2.webp",
-        alt: "Barista preparing a latte with latte art at Roast Republic",
-      },
-    ],
+    img: [{ id: 0, src: "/media/img1.webp", alt: "Iced coffee" }],
   },
   {
     id: 2,
